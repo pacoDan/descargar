@@ -1,6 +1,6 @@
 https://pip.pypa.io/en/stable/installation/
 Ejemplo:
-![image](https://github.com/pacoDan/descargar/assets/27025002/e3af3e51-d3a8-4e98-9d71-46980a9ac2e4)
+![image](https://github.com/pacoDan/descargar/assets/27025002/7a2295fd-604a-444e-afab-34ba692a8efe)
 
 pip install -r requirements
 --------------------------------------------------
