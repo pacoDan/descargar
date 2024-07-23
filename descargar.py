@@ -1,6 +1,6 @@
 import yt_dlp
 import sys
-
+# from pytube import YouTube
 # link = "ingrese link: "
 # # url = input(link)
 # #
@@ -21,6 +21,12 @@ def descargar(link):
         ydl.download([link])
     print("Descargado!!!")
 
+def descargar2(link):
+    # YouTube(link).streams.first().download()
+    yt = YouTube(link)
+    print("descargando -> "+yt.title)
+    yt.streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first().download()
+    
 
 def procesar_argumentos():
     # Verificar si se proporcionó al menos un argumento
