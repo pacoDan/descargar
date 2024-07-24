@@ -15,8 +15,11 @@ import sys
 
 
 def descargar(link):
-    print("descargando")
-    ydl_opts = {}
+    print("Descargando...")
+    ydl_opts = {
+        'format': 'bestvideo+bestaudio/best',  # Seleccionar la mejor calidad de video y audio
+        'merge_output_format': 'mp4',  # Formato de salida
+    }
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         ydl.download([link])
     print("Descargado!!!")
