@@ -23,4 +23,8 @@ pip install -r requirements.txt
 echo "Actualizando pip!!"
 pip install --upgrade pip
 
+# Paso 5: Generar el ejecutable con PyInstaller
+echo "Generando el ejecutable..."
+pyinstaller --onefile descargar.py
+
 echo "Todo se ha ejecutado correctamente"
