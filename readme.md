@@ -1,5 +1,5 @@
 ```sh
-source install.sh
+source install.sh #PARA INSTALAR COMPLETAMENTE
 ```
 ```sh
 pip install -r requirements
