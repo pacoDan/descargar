@@ -1,9 +1,9 @@
-https://pip.pypa.io/en/stable/installation/
-
-Ejemplo:
-![image](https://github.com/pacoDan/descargar/assets/27025002/7a2295fd-604a-444e-afab-34ba692a8efe)
-
+```sh
+source install.sh
+```
+```sh
 pip install -r requirements
+```
 --------------------------------------------------
 
 Puedes generar un ejecutable de tu programa Python utilizando herramientas de empaquetado y distribución como PyInstaller, cx_Freeze o py2exe, dependiendo de tus necesidades y plataforma. Aquí te muestro cómo hacerlo con PyInstaller:
