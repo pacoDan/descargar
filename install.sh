@@ -27,4 +27,6 @@ pip install --upgrade pip
 echo "Generando el ejecutable..."
 pyinstaller --onefile descargar.py
 
-echo "Todo se ha ejecutado correctamente"
+echo "Se genero el ejecutable correctamente"
+
+mkdir -p ~/miBinDaniel && cp dist/descargar ~/miBinDaniel/

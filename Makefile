@@ -1,5 +1,7 @@
 .PHONY: install uninstall create_dir move_executable remove_executable
 
+
+
 # Regla principal: instalación completa
 install: create_dir
 	@echo "Creando el entorno virtual..."
