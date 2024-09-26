@@ -30,3 +30,18 @@ pyinstaller --onefile descargar.py
 echo "Se genero el ejecutable correctamente"
 
 mkdir -p ~/miBinDaniel && cp dist/descargar ~/miBinDaniel/
+
+# Agregar el directorio al PATH en .bashrc y .zshrc si no está ya presente
+if ! grep -q 'export PATH="$HOME/miBinDaniel:$PATH"' ~/.bashrc; then
+  echo 'export PATH="$HOME/miBinDaniel:$PATH"' >>~/.bashrc
+fi
+
+if ! grep -q 'export PATH="$HOME/miBinDaniel:$PATH"' ~/.zshrc; then
+  echo 'export PATH="$HOME/miBinDaniel:$PATH"' >>~/.zshrc
+fi
+
+# Recargar los archivos de configuración de la terminal
+source ~/.bashrc
+source ~/.zshrc
+
+echo "El ejecutable se ha agregado al PATH y la terminal se ha actualizado."
