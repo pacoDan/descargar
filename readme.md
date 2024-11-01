@@ -2,6 +2,9 @@
 source install.sh #SOLO PARA INSTALAR COMPLETAMENTE
 ```
 ```sh
+for file in *.mp4 *.mkv(.N); do ffmpeg -i "$file" -vn -ab 320k "${file%.*}.mp3"; done  # convierte los videos mp4 y mkv a mp3
+```
+```sh
 pip install -r requirements # instala las bibliotecas necesarias
 ```
 ```sh
