@@ -19,27 +19,3 @@
 #     yt.streams.filter(progressive=True, file_extension="mp4").order_by(
 #         "resolution"
 #     ).desc().first().download()
-#
-#
-# def procesar_argumentos():
-#     # Verificar si se proporcionó al menos un argumento
-#     if len(sys.argv) < 2:
-#         print("Uso: ./descargar link")
-#         print("Si no se proporciona el link, se utilizará la carpeta Descargas.")
-#         return None
-#     else:
-#         # El primer argumento es el link
-#         return sys.argv[1]
-#
-#
-# if __name__ == "__main__":
-#     # Procesar los argumentos
-#     link = procesar_argumentos()
-#
-#     # Si no se proporcionó un link, usar la carpeta Descargas
-#     if link is None:
-#         # Reemplaza "tu_usuario" con tu nombre de usuario de Linux
-#         link = "/home/daniel_wsl2/Descargas"
-#     print("El link seleccionado es:", link)
-#     print("Comenzando a descargar link ->", link)
-#     descargar(link)

@@ -20,10 +20,8 @@ class Principal:
     def ejecutar_descarga(self,link :str):
         # Procesar los argumentos
         # link = self.procesar_argumentos()
-
-        print("Iniciando descarga en Principal de Daniel...")
+        print("Iniciando descarga en #Principal>>ejecutar_descarga()...")
         self.descargador.descargar(link)  # Llama al método de descargador
-        print("Descarga finalizada en Principal de Daniel.")
 
 
 if __name__ == "__main__":
