@@ -1,3 +1,9 @@
+```
+```sh
+pip install -U yt-dlp
+yt-dlp --write-subs --sub-lang es,en https://youtu.be/7xGpEbIW7GQ
+```
+```
 ```sh
 source install.sh #SOLO PARA INSTALAR COMPLETAMENTE
 ```
