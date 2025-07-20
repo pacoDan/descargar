@@ -1,17 +1,5 @@
 import yt_dlp
 import sys
-# from pytube import YouTube
-# link = "ingrese link: "
-# # url = input(link)
-# #
-# ydl_opts = {}
-# with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-#     ydl.download([url])
-# print("video descargado satsfactoriamente")
-# # print("Ok nos vemos!!")
-#
-
-# import sys
 
 
 def descargar(link):
@@ -20,6 +8,7 @@ def descargar(link):
         # Seleccionar la mejor calidad de video y audio
         "format": "bestvideo+bestaudio/best",
         "merge_output_format": "mp4",  # Formato de salida
+        "outtmpl": "%(title)s.%(ext)s",  # Formato del nombre del archivo
     }
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         ydl.download([link])
