@@ -4,6 +4,7 @@ npm install -g deno
 conda install -c conda-forge ffmpeg -y
 yt-dlp -x --audio-format mp3 --audio-quality 0 "URL_DE_TU_PLAYLIST"
 ```
+solo subtitulos example
 ```sh
 pip install -U yt-dlp
 yt-dlp --write-subs --sub-lang es,en https://youtu.be/7xGpEbIW7GQ
@@ -11,6 +12,7 @@ yt-dlp --write-subs --sub-lang es,en https://youtu.be/7xGpEbIW7GQ
 ```sh
 source install.sh #SOLO PARA INSTALAR COMPLETAMENTE
 ```
+convierte los videos mp4 y mkv a mp3
 ```sh
 for file in *.mp4 *.mkv(.N); do ffmpeg -i "$file" -vn -ab 320k "${file%.*}.mp3"; done  # convierte los videos mp4 y mkv a mp3
 ```
