@@ -1,8 +1,12 @@
+herramientas de yt-dlp:
+```sh
+npm install -g deno
+conda install -c conda-forge ffmpeg -y
+yt-dlp -x --audio-format mp3 --audio-quality 0 "URL_DE_TU_PLAYLIST"
 ```
 ```sh
 pip install -U yt-dlp
 yt-dlp --write-subs --sub-lang es,en https://youtu.be/7xGpEbIW7GQ
-```
 ```
 ```sh
 source install.sh #SOLO PARA INSTALAR COMPLETAMENTE
