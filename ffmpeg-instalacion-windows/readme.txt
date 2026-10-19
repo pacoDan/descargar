@@ -1,0 +1,1 @@
+esto funciono con powershell instalado y en windows 10 LTSC 21H2
